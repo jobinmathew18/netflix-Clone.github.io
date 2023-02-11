@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header id="header">
+      <div class="header-container container flex">
+        <div class="left-cont flex">
+          <a href="#"
+            ><img
+              class="header-brand"
+              src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+              alt="logo"
+          /></a>
+          <ul class="main-nav responsive-large">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">TV Show</li>
+            <li class="nav-item">Movies</li>
+            <li class="nav-item">New & Popular</li>
+            <li class="nav-item">My List</li>
+            <li class="nav-item">Browse by Languages</li>
+          </ul>
+          <ul class="main-nav responsive-medium">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">TV Show</li>
+            <li class="nav-item">Movies</li>
+            <li class="nav-item">New & Popular</li>
+          </ul>
+        </div>
+        <div class="right-cont flex">
+          <div class="responsive-medium responsive-small"><i class="fa-solid fa-bars nav-item" onclick=`${openMenu()}`></i></div>
+          <i class="fa-solid fa-magnifying-glass nav-item"></i>
+          <i class="fa-solid fa-bell nav-item"></i>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+            alt="user logo"
+            class="nav-item"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-menu-cont">
+      <ul class="nav-menu">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">TV Show</li>
+        <li class="nav-item">Movies</li>
+        <li class="nav-item">New & Popular</li>
+        <li class="nav-item">My List</li>
+        <li class="nav-item">Browse by Languages</li>
+      </ul>
+    </div>
+
+    <!-- banner section -->
+    <div class="banner-section" id="banner-section">
+      <!-- <div class="banner-content flex container">
+        <h2 class="banner-title">Titanic</h2>
+        <h4 class="banner-info">#1 in TV Shows Today</h4>
+        <p class="banner-overview">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          repellendus. Alias aliquid optio dignissimos, repellat quasi enim
+        </p>
+        <div class="action-buttons-cont">
+          <a href="#" class="primary action-button">
+            <i class="fa-solid fa-play"></i> Play
+          </a>
+          <a href="#" class="secondary action-button">
+            <i class="fa-solid fa-angles-right"></i> More Info
+          </a>
+        </div>
+        <div class="banner-fade-bottom"></div>
+      </div> -->
+    </div>
+
+    <!-- movies section -->
+    <div class="movies-cont container" id="movies-cont">
+      <!-- <div class="movies-section">
+        <h3 class="movie-section-heading">
+          Trending Now <span class="explore-nudge">Explore All</span>
+        </h3>
+        <div class="movies-row flex">
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/qHdPNd1cUaSNYLLNgt1Pv3LVd0T.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="movies-section">
+        <h3 class="movie-section-heading">
+          Trending Now <span class="explore-nudge">Explore All</span>
+        </h3>
+        <div class="movies-row flex">
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/qHdPNd1cUaSNYLLNgt1Pv3LVd0T.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="movies-section">
+        <h3 class="movie-section-heading">
+          Trending Now <span class="explore-nudge">Explore All</span>
+        </h3>
+        <div class="movies-row flex">
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/qHdPNd1cUaSNYLLNgt1Pv3LVd0T.jpg"
+            alt=""
+          />
+          <img
+            class="movie-item"
+            src="https://image.tmdb.org/t/p/original/94kQGMiFbs5MUTlt7kj9dewsMDi.jpg"
+            alt=""
+          />
+        </div>
+      </div> -->
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/630cef9cb8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

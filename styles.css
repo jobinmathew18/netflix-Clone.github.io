@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap");
+
+body{
+  background-color: #141414;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1342px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+i {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* header */
+header {
+  background-color: transparent;
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+header.black-bg{
+  background-color: #141414;
+  transition: background-color ease 500ms;
+}
+
+.header-container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-brand {
+  max-width: 120px;
+}
+
+.left-cont {
+  align-items: center;
+  flex-basis: 80%;
+}
+
+.main-nav {
+  padding-inline: 40px 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 31px;
+  flex-basis: 80%;
+  font-size: 0.9rem;
+}
+
+.nav-item {
+  color: white;
+}
+
+.nav-item:hover {
+  color: #e50914;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.right-cont img {
+  max-width: 40px;
+}
+
+.right-cont {
+  flex-basis: 20%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+}
+
+.responsive-medium{
+  display: none;
+}
+
+.nav-menu-cont{
+  /* display: none; */
+  position: absolute;
+  padding-block: 6rem 4rem;
+  background-color:#141414;
+  width: 100%;
+  z-index: 10;
+  left: -100%;
+}
+
+.nav-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+  align-items: center;
+}
+
+.nav-menu-cont.active{
+  left: 0;
+  /* display: block; */
+  transition: 0.2s ease;
+}
+
+
+/* banner */
+.banner-section{
+  max-width: 100%;
+  height: 100vh;
+  background:linear-gradient(to right, rgba(0,0,0,0.4) 40%, rgba(0,0,0,0.1)), url(	https://image.tmdb.org/t/p/original/s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg) no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* padding-top: 150px; */
+  display: flex;
+  align-items: center;
+}
+
+.banner-content{
+  flex-direction: column;
+  font-weight: 700;  
+}
+
+.banner-title{
+  margin-block: 10px 15px;
+  font-size: 4rem;
+  max-width: 70%;
+}
+
+.banner-info{
+  font-size: 1.5rem;
+  margin-block: 10px;
+}
+
+.banner-overview{
+  max-width: 50%;
+  font-weight: 400;
+}
+
+.action-buttons-cont{
+  padding-block: 3rem;
+}
+
+.action-button:hover{
+  color: #e50914;
+  transition: 0.2s ease-in;
+
+}
+
+.action-button:hover i{
+  color: #e50914;
+  transition: 0.2s ease-in;
+}
+
+.action-button{
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 17px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.primary{
+  background-color: white;
+  color: black;
+  border: 1px solid white ;
+}
+
+.primary i{
+  color: black;
+  padding-inline: 5px 10px;
+}
+
+.secondary{
+  background-color: transparent;
+  border: 1px solid white ;
+}
+
+.secondary i{
+  color: white;
+  padding-inline: 5px 10px;
+}
+
+.banner-fade-bottom{
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #141414);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+
+/* movies seciton */
+.movies-section{
+  margin-block: 4rem;
+}
+
+.movie-section-heading{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.explore-nudge{
+  font-size: 12px;
+  color: #54b9c5;
+  display: none;
+  padding-inline: 1rem;
+}
+
+.movie-section-heading:hover .explore-nudge{
+  display: inline-block;
+}
+
+.movies-row{
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-block: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+ 
+.movie-item{
+  max-width: 230px;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.movie-item:hover{
+  transform: scale(1.1);
+  transition: transform ease 300ms;
+}
+

@@ -1,0 +1,160 @@
+@media screen and (max-width:1330px){
+   .responsive-large{
+    display: none;
+   }
+
+   .responsive-medium{
+    display: flex;
+   }
+
+   .banner-title{
+    font-size: 3.2rem;
+   }
+}
+
+@media screen and (max-width:1000px){
+  .responsive-medium{
+    display: none;
+  }
+
+  .responsive-small{
+    display: block;
+  }
+
+  .right-cont{
+    gap: 50px;
+  }
+
+  .banner-section{
+    max-height: 90vh;
+    background-size: 100% 100%;
+    padding-top: 60px;
+  }
+
+  .banner-title{
+    margin-block: 6px 6px;
+    font-size: 3.2rem;
+  }
+
+  .banner-info{
+    font-size: 1.2rem;
+    margin-block: 8px;
+  }
+  
+  .banner-overview{
+    font-size: 14px;
+  }
+
+  .action-buttons-cont{
+    padding-block: 2rem;
+  }
+
+  .action-button{
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+
+}
+
+
+
+@media screen and (max-width:690px) {
+  .right-cont{
+    gap: 30px;
+  }
+
+  .banner-section{
+    max-height: 70vh;
+    background-size: 100% 100%;
+  }
+  
+  .banner-title{
+    width: 70%;
+    margin-block: 3px 3px;
+    font-size: 2rem;
+    padding-top: 30px;
+  }
+
+  .banner-info{
+    font-size: 0.8rem;
+    margin-block: 8px;
+  }
+  
+  .banner-overview{
+    font-size: 12px;
+  }
+
+  .banner-fade-bottom{
+    height: 50px;
+  }
+
+  .action-buttons-cont{
+    padding-block: 1.6rem;
+  }
+
+  .action-button{
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    font-size: 11px;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+
+  .movies-section{
+    margin: 3rem  0 1rem;
+  }
+
+  .movie-section-heading{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .explore-nudge{
+    font-size: 10px;
+  }
+
+  .movies-row{
+    gap: 10px;
+    padding-block: 8px;
+  }
+
+  .movie-item{
+    max-width: 158px;
+    max-height: 1200px;
+  }
+}
+
+
+@media screen and (max-width:450px){
+  .right-cont{
+    gap: 20px;
+  }
+
+  .banner-section{
+    height: 50vh;
+  }
+  
+  .banner-title{
+    width: 100%;
+    font-size: 1.1rem;
+    padding-top: 0px;
+    line-height: 1;
+  }
+
+  .banner-info{
+    font-size: 10px;
+    margin-block: 8px;
+  }
+  
+  .banner-overview{
+    font-size: 10px;
+  }
+
+}
+
+
